@@ -2,6 +2,7 @@
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-bottom: 40px;
 }
 
 .card > img {
@@ -36,4 +37,12 @@
   right: 16px;
   top: -20px;
   width: 40px;
+}
+
+.section {
+  background: white;                         /* White background */
+  padding: 30px;                             /* Internal space */
+  border-radius: 4px;                        /* Small radius */
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  margin-top: 100px;
 }
