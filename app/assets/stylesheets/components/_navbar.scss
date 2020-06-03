@@ -30,4 +30,7 @@
 
 .nav-link-blue {
   color: #74CBFF;
+  &:hover {
+    color: black;
+  }
 }
