@@ -1,8 +1,12 @@
-#home-intro {
+.section {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 20px;
   padding: 30px;                             /* Internal space */
   border-radius: 4px;                        /* Small radius */
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.contact-page {
+  margin-top: 150px;
 }
