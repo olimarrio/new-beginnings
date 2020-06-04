@@ -1,6 +1,6 @@
 const initUpdateNavbarOnScroll = () => {
-  const navbar = document.querySelector('.navbar-lewagon');
-  const navlinks = document.querySelectorAll('.nav-link-white');
+  const navbar = document.querySelector('.navbar-home');
+  const navlinks = document.querySelectorAll('.nav-link-black');
   if (navbar) {
     window.addEventListener('scroll', () => {
       if (window.scrollY >= 420) {

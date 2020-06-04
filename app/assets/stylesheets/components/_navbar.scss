@@ -2,8 +2,23 @@
   justify-content: space-between;
   background: white;
   color: #eee;
+  background-color: white;
+  transition: 0.5s background-color ease;
+}
+
+.navbar-home {
+  justify-content: space-between;
+  background: white;
+  color: #eee;
   background-color: transparent;
   transition: 0.5s background-color ease;
+  .nav-link-black {
+    color: rgba(255,255,255, 0.6);
+    padding: 0px 20px 0px 0px;
+  }
+  .nav-link-blue {
+    color: #74CBFF;
+  }
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -23,9 +38,14 @@
   padding: 0px 20px 0px 0px;
 }
 
-.nav-link-white:hover {
+.nav-link-black {
+  color: black;
+  padding: 0px 20px 0px 0px;
+}
+
+.nav-link-black:hover {
   text-decoration: none;
-  color: #eee;
+  color: #74CBFF;
 }
 
 .nav-link-blue {
