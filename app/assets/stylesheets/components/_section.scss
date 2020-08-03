@@ -28,7 +28,8 @@
 
 .section-dark {
   background-color: rgb(0, 0, 0);
-  border-radius: 0px;                        /* Small radius */
+  border-radius: 0px;
+  padding-bottom: 50px;                       /* Small radius */
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
   h2 {
     color: white;
