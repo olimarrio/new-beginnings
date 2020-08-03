@@ -3,12 +3,33 @@
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-bottom: 40px;
+  border-radius: 200px 0px;
+}
+
+.card-left {
+  border-radius: 200px 0px;
+}
+
+.card-right {
+  border-radius: 0px 200px;
+  text-align: right;
 }
 
 .card > img {
   height: 200px;
   width: 100%;
+  border-radius: 200px 0px;
   object-fit: cover;
+}
+
+.card-links {
+  text-decoration: none;
+  color: black;
+}
+
+.card-links:hover {
+  text-decoration: none;
+  color: #3CD3CC;
 }
 
 .card h2 {

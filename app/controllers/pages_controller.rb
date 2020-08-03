@@ -7,4 +7,16 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def recruitment
+  end
+
+  def risk
+  end
+
+  def negotiation
+  end
+
+  def human_hr
+  end
 end
