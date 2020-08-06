@@ -12,6 +12,11 @@
   margin-bottom: 10px;
 }
 
+.teal-spacer {
+  margin-top: 60px;
+  background-color: #3CD3CC;
+}
+
 .section-gray {
   background-color: rgba(244, 244, 244, 0);
   padding-top: 32px;
@@ -52,12 +57,21 @@
 
 .flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 50px;
+  flex-wrap: flex;
 }
 
 .flex-item {
   padding: 10px 40px;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.flex-shrink {
+  flex-shrink: 0;
 }
 
 .storyboard {

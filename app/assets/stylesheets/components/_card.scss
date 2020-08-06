@@ -3,10 +3,21 @@
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-bottom: 40px;
-  border-radius: 200px 0px;
+}
+
+.card-right {
+  border-radius: 0px 200px;
+}
+
+.card-right > img {
+  border-radius: 0px 200px;
 }
 
 .card-left {
+  border-radius: 200px 0px;
+}
+
+.card-left > img {
   border-radius: 200px 0px;
 }
 
@@ -18,7 +29,6 @@
 .card > img {
   height: 200px;
   width: 100%;
-  border-radius: 200px 0px;
   object-fit: cover;
 }
 
