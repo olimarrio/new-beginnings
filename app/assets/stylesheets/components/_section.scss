@@ -13,8 +13,8 @@
 }
 
 .teal-spacer {
-  margin-top: 60px;
-  background-color: #3CD3CC;
+  padding-top: 60px;
+  background-color: #DEF7F3;
 }
 
 .section-gray {
@@ -24,11 +24,8 @@
 
 .section-teal {
   background-color: #DEF7F3;
-  padding: 50px;
+  // padding: 50px;
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
-  h2 {
-    margin-top: 40px;
-  }
 }
 
 .section-dark {
