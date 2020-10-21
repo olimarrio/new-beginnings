@@ -6,6 +6,7 @@ gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
 gem 'mail_form'
+gem 'sendgrid-ruby'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

@@ -47,9 +47,22 @@
   margin-top: 150px;
   margin-bottom: 50px;
   overflow-wrap: break-word;
+  h1 {
+    color: #18544D;
+  }
   h3 {
     font-size: 15px;
   }
+}
+
+.top {
+  height: 1px;
+  width: 30%;
+  align-items: center;
+  color: #3BD4CD;
+  background-color: #3BD4CD;
+  border: none;
+  opacity: 0.6;
 }
 
 .flex {
