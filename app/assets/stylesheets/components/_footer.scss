@@ -29,3 +29,17 @@
 .breaker {
   overflow-wrap: break-word;
 }
+
+.email-link {
+  color: #3CD3CC;
+  margin-bottom: 0.5rem;
+  font-family: "Comfortaa", "cursive";
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2rem;
+}
+
+.email-link:hover {
+  text-decoration: none;
+  color: #3CD3CC;
+}
