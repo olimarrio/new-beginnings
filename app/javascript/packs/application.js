@@ -20,3 +20,7 @@ import 'bootstrap';
 import { initUpdateNavbarOnScroll } from '../components/navbar';
 initUpdateNavbarOnScroll();
 console.log('Hello World from Webpacker')
+
+//Accordion
+import { initAccordion } from '../components/accordion';
+initAccordion();
