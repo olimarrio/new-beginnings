@@ -1,12 +1,18 @@
 .orange-button {
-  background: orange;
-  border-color: orange;
+  background: #FF9200;
+  border-color: #FF9200;
   color: white;
   padding: 10px 20px;
   border-radius: 4px;
   margin: 20px;
   transition: background 0.2s;
   text-decoration: none;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.large {
+  padding: 10px 60px;
 }
 
 .orange-button-active {
@@ -21,3 +27,5 @@
   padding: 0 15px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
+
+
