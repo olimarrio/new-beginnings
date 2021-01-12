@@ -61,7 +61,7 @@
 
 .card .card-infos {
   padding: 16px;
-  display: flex;
+  // display: flex;
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
@@ -80,4 +80,8 @@
   border-radius: 4px;                        /* Small radius */
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
   margin-top: 100px;
+}
+
+#sales-card {
+  background-image: url("https://images.unsplash.com/photo-1496902526517-c0f2cb8fdb6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
 }

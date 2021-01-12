@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3996215, 2021-01-11T13:26:09-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: ZapfHumnstBTWXX-Roman by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/zapf-humanist-601/zapf-humanist-601/
+ * Copyright: Copyright 1990-2003 Bitstream Inc. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3cfa37");
+  
+@font-face {
+  font-family: 'ZapfHumnstBTWXX-Roman';
+  src: url('webFonts/ZapfHumnstBTWXX-Roman/font.woff2') format('woff2'), url('webFonts/ZapfHumnstBTWXX-Roman/font.woff') format('woff');
+}
+

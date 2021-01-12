@@ -14,7 +14,7 @@ class PagesController < ApplicationController
   def risk
   end
 
-  def negotiation
+  def sales
   end
 
   def human_hr
