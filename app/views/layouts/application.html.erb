@@ -12,6 +12,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/config/MyFontsWebfontsKit.css">
 
 
 
@@ -26,7 +27,6 @@
     <noscript><img alt="" src="https://secure.harm6stop.com/196620.png" style="display:none;" /></noscript>
     <%= render "shared/navbar" %>
     <%= yield %>
-    <%= render "shared/contact_form" if !current_page?(pages_contact_path) && !current_page?(pages_about_path) %>
     <%= render "shared/footer" %>
 
     <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %> <!-- from app/assets/javascripts/application.js -->
