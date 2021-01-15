@@ -1,28 +1,58 @@
-hr {
-    background: url('/../../images/rsz_nb_butterfly-01.png') no-repeat top center;
-    background-size: contain;
-    display: block;
-    height: 18px;
-    border: 0;
-    position: relative;
+// hr {
+//     background: url('../images/rsz_nb_butterfly-01.png') no-repeat top center;
+//     background-size: contain;
+//     display: block;
+//     height: 18px;
+//     border: 0;
+//     position: relative;
+// }
+
+// hr:before,
+// hr:after {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     background: #2A6355;
+//     height: 2px;
+//     top: 8px;
+// }
+// hr:before {
+//     left: 0;
+//     right: 50%;
+//     margin-right: 10px;
+// }
+// hr:after {
+//     right: 0;
+//     left: 50%;
+//     margin-left: 10px;
+// }
+
+.flourish {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+.flourish:before,
+.flourish:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  height: 1px;
+  background: #2A6355;
+  width: 50%;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.flourish:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+.flourish:after {
+  left: 0.5em;
+  margin-right: -50%;
 }
 
-hr:before,
-hr:after {
-    content: '';
-    display: block;
-    position: absolute;
-    background: #2A6355;
-    height: 2px;
-    top: 8px;
-}
-hr:before {
-    left: 0;
-    right: 50%;
-    margin-right: 10px;
-}
-hr:after {
-    right: 0;
-    left: 50%;
-    margin-left: 10px;
+#img-hr {
+  vertical-align: middle;
 }

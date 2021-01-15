@@ -1,168 +1,152 @@
 <% content_for(:navbar_class, "navbar-home") %>
 <div class="home-banner">
   <h1>New Beginnings Consultation</h1>
-  <h2>Listen. Empower. Transform.</h2>
+  <h2>We Listen. We Empower. We Transform.</h2>
   <%= link_to "Get in touch", pages_contact_path, class: "btn btn-ghost" %>
 </div>
 <div class="section section-dark">
   <div class="container">
-    <h2 class="greeting">A lot has changed recently...</h2>
-    <h2 class="greeting">It's a time for New Beginnings</h2>
+    <h2 class="greeting">Start your new beginning with us today</h2>
   </div>
 </div>
 
-<div class="section welcome">
+<div class="section welcome section-teal">
   <div class="container">
-    <h3>
-      At New Beginnings Consultation, we bring our expertise to listen, empower and transform.
-    </h3>
-    <div class="white-spacer">
-    </div>
-    <p>
-      At New Beginnings (NBC) we help our clients with organisation, agility and scalability, through techniques and training, to enable transformative enhancement, and restructured sustainability, in these challenging times.
-
-      Our consultants bring 50 years of professional expertise across a wide range of areas, helping your business to deliver structure, mindset, and the environment to ensure you succeed. With a global team working in APAC, Europe and the Americas, we are best placed to offer support, guidance and recommendations in the environment most relevant to you.
-    </p>
-    <p>
-      At NBC we understand that each business has a unique fingerprint and we focus on maintaining that unique identity and message moving forward.
-
-
-
-      Whether you are an organisation having to make changes and adapt, or you are a talented individual looking to take your career further, our friendly team welcome all your enquiries about how to take the first steps towards your New Beginning.
-
-
-    </p>
-<!--     <div class="storyboard">
-      <div class="row justify-content-center">
-
-        <div class="col-sm-12 col-md-12 col-lg-2">
-          <%= image_tag("NB_stroyboard-03.jpg", class: "avatar-bordered") %>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-2">
-          <%= image_tag("NB_stroyboard-04.jpg", class: "avatar-bordered") %>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-2">
-          <%= image_tag("NB_stroyboard-05.jpg", class: "avatar-bordered") %>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-2">
-          <%= image_tag("NB_stroyboard-06.jpg", class: "avatar-bordered") %>
+    <div class="white-spacer"></div>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-sm-12 col-md-6">
+        <p>
+          We help our clients achieve outstanding commercial excellence by putting people and personality at the heart of every decision.
+          We aim to empower organisations to be brave, to take real action and implement transformative change.
+          We celebrate diverse personalities and believe they can change the narrative in business for the better.
+        </p>
+        <h3>
+          Together, we can break the mould.
+        </h3>
+        <button class="btn-lilac" data-target="what-we-do">Find out more</button>
+      </div>
+      <div class="col-sm-12 col-md-6">
+      <div class="white-spacer"></div>
+        <div class="card card-left" id="medium-leaf">
+          <img src="https://cdn.pixabay.com/photo/2018/03/22/16/46/mat-3251064_1280.jpg" alt="Different Spices varying personalities">
         </div>
       </div>
-    </div> -->
-    <div class="white-spacer"></div>
-      <h3 class="text-center">
-       What We Do
-      </h3>
-      <hr>
+    </div>
   </div>
 </div>
 
+<div class="section" id="what-we-do">
+  <div class="white-spacer"></div>
+  <h3 class="text-center">
+    What We Do
+  </h3>
+  <div class="flourish">
+    <%= image_tag "rsz_nb_butterfly-01.png", alt: "alttext", class: "avatar-tiny", id: "img-hr" %>
+  </div>
 
-
-<div class="section-teal">
   <div class="container">
-    <div class="teal-spacer"></div>
+    <div class="white-spacer"></div>
+
     <div class="row justify-content-center">
       <div class="col-sm-12 col-md-6">
-        <div class="card card-right">
-          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" />
+        <%= link_to pages_sales_path, class: "card card-right" do %>
+          <img src="https://cdn.pixabay.com/photo/2017/01/18/16/36/geese-1990202_1280.jpg" alt="Geese Flying in harmony"/>
           <div class="card-infos">
-            <div>
-              <%= link_to pages_sales_path, class: "card-links" do %>
-                <h2>Sales Effectiveness</h2>
-                <p class="breaker">Developing Capabilities for Commercial Excellence</p>
-              <% end %>
+            <div class="card-links">
+              <h2>Sales Effectiveness</h2>
+              <p class="breaker">Capabilities for Commercial Excellence</p>
             </div>
-            <!-- <h2 class="card-pricing">Work with us</h2> -->
           </div>
-        </div>
+          <div class="overlay">
+            <div class="text-overlay">
+              <p>
+                Outstanding commercial excellence has a highly effective sales team at its core.
+                Our approach to capability development spans a wide range of industries.
+                We help individuals and teams to be the best they can be.
+              </p>
+              <p><strong>See more</strong></p>
+            </div>
+          </div>
+        <% end %>
       </div>
 
       <div class="col-sm-12 col-md-6">
-        <div class="card card-left">
-          <img src="https://images.unsplash.com/photo-1496902526517-c0f2cb8fdb6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" />
+        <%= link_to pages_risk_path, class: "card card-left" do %>
+          <img src="https://cdn.pixabay.com/photo/2016/10/24/23/11/doors-1767563_1280.jpg" alt="Yellow door among white doors choice" />
           <div class="card-infos">
-            <div>
-              <%= link_to pages_risk_path, class: "card-links" do %>
-                <h2>Risk Management</h2>
-                <p>Identifying areas to drive profitability</p>
-              <% end %>
-            </div>
-            <!-- <h2 class="card-pricing">Get in touch</h2> -->
-          </div>
-        </div>
-      </div>
-<!--
-      <div class="col-sm-12 col-md-4">
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1532009877282-3340270e0529?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" />
-          <div class="card-infos">
-            <div> -->
-           <!--    < link_to pages_employee_relations_path,
-                <h2>Employee Relations</h2>
-                <p>More information coming soon...</p>
-
-            </div> -->
-            <!-- <h2 class="card-pricing">Find out more</h2> -->
- <!--          </div>
-        </div>
-      </div> -->
-
-      <!-- <div class="col-sm-12 col-md-4">
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80" />
-          <div class="card-infos">
-            <div>
-              <h2>Negotiation for candidates</h2>
-              <p>More information coming soon...</p>
-            </div> -->
-            <!-- <h2 class="card-pricing">Work with us</h2> -->
-    <!--       </div>
-        </div>
-      </div> -->
-
-      <div class="col-sm-12 col-md-6">
-        <div class="card card-left">
-          <img src="https://images.unsplash.com/photo-1538766017398-415434a31a5b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" />
-          <div class="card-infos">
-            <div>
-              <%= link_to pages_human_hr_path, class: "card-links" do %>
-                <h2>HR & Employee Relations</h2>
-                <p>Putting human back into Human Resources</p>
-              <% end %>
+            <div class="card-links">
+              <h2>Risk Management</h2>
+              <p>Identifying areas to drive profitability</p>
             </div>
           </div>
-        </div>
+          <div class="overlay">
+            <div class="text-overlay">
+              <p>
+                To plan effectively, risk needs to be tangible. Our focus is just that - what might happen to your market, your sales, your people? We help organisations plan for and mitigate against, the risks in a changing world.
+              </p>
+              <p><strong>See more</strong></p>
+            </div>
+          </div>
+        <% end %>
       </div>
 
       <div class="col-sm-12 col-md-6">
-          <div class="card card-right">
-            <img src="https://images.unsplash.com/photo-1567941537380-d3cc4b3384a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80" />
+        <%= link_to pages_human_hr_path, class: "card card-left" do %>
+          <img src="https://cdn.pixabay.com/photo/2015/07/20/23/12/courage-853466_1280.jpg" alt="Writing on stones courage truth faith" />
+          <div class="card-infos">
+            <div class="card-links">
+              <h2>HR & Employee Relations</h2>
+              <p>Putting human back in Human Resources</p>
+            </div>
+          </div>
+          <div class="overlay">
+            <div class="text-overlay">
+              <p>
+                We believe in putting people first in every context.
+                Our focus on people and personalities helps organisations be successful and a great place to work, even in challenging times.
+              </p>
+              <p><strong>See more</strong></p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="col-sm-12 col-md-6">
+        <%= link_to pages_recruitment_path, class: "card card-right" do %>
+            <img src="https://images.unsplash.com/photo-1538766017398-415434a31a5b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Blue door opening to new possibilities"/>
             <div class="card-infos">
-              <div>
-                <%= link_to pages_recruitment_path, class: "card-links" do %>
+              <div class="card-links">
                   <h2>360 Recruitment</h2>
                   <p>Finding the personality behind the job</p>
-                <% end %>
               </div>
             </div>
-          </div>
+            <div class="overlay">
+              <div class="text-overlay">
+                <p>
+                  Recruitment isn’t just about jobs. Recruitment is about personalities. Of employers and of candidates. Our approach finds people that fit. People that love their new job. Companies that love their new people.
+                </p>
+                <p><strong>See more</strong></p>
+              </div>
+            </div>
+        <% end %>
       </div>
+    </div>
+  </div>
+    <div class="container">
+      <p>We would love to hear from you!</p>
+      <p>Call us on:</p>
+      <a class="email-phone-blue" href="tel:+442034885717">0203 488 5717</a>
+      <p>Email us at:</p>
+      <div class="breaker">
+        <a href="mailto:hello@newbeginningsconsultation.com" class="email-phone-blue">hello@newbeginningsconsultation.com</a>
+      </div>
+      <div class="white-spacer"></div>
+      <p>Or get in touch using the form below:</p>
     </div>
   </div>
 </div>
 
-<div class="section">
-  <div class="container">
-    <p>We would love to hear from you!</p>
-    <p>Call us on:</p>
-    <a class="email-link" href="tel:+442034885717">0203 488 5717</a>
-    <p></p>
-    <p>Or email us at:</p>
-    <div class="breaker">
-    <a href="mailto:hello@newbeginningsconsultation.com" class="email-link">hello@newbeginningsconsultation.com</a>
-    </div>
-  </div>
-</div>
+
+
 
 

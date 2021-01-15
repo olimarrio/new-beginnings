@@ -5,6 +5,10 @@
   margin-bottom: 40px;
 }
 
+.card:hover {
+  text-decoration: none;
+}
+
 .card-right {
   border-radius: 0px 200px;
 }
@@ -15,6 +19,8 @@
 
 .card-left {
   border-radius: 200px 0px;
+  text-align: left;
+  text-decoration: none;
 }
 
 .card-left > img {
@@ -24,6 +30,7 @@
 .card-right {
   border-radius: 0px 200px;
   text-align: right;
+  text-decoration: none;
 }
 
 .card > img {
@@ -34,7 +41,11 @@
 
 .card-links {
   text-decoration: none;
-  color: black;
+  color: #2A6355;
+}
+
+.card-links p {
+  font-size:12px;
 }
 
 .card-links:hover {
@@ -49,22 +60,27 @@
 }
 
 .card p {
-  font-size: 12px;
   opacity: .7;
   margin: 0;
 }
 
 #small-leaf {
-  width: 300px;
+  width: 400px;
+  max-width: 100%;
 }
 
+#medium-leaf {
+  width: 450px;
+  max-width:100%;
+}
 
-.card .card-infos {
-  padding: 16px;
-  // display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
+.card-infos {
+  padding: 12px;
+  text-decoration: none;
+}
+
+.card-links:hover {
+  text-decoration: none;
 }
 
 .card-infos .card-user {
@@ -74,14 +90,59 @@
   width: 40px;
 }
 
-.section {
-  background: white;                         /* White background */
-  padding: 30px;                             /* Internal space */
-  border-radius: 4px;                        /* Small radius */
-  box-shadow: 0 10px 30px rgba(0,0,0,.1);
-  margin-top: 100px;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #4AD3CC;
 }
 
-#sales-card {
-  background-image: url("https://images.unsplash.com/photo-1496902526517-c0f2cb8fdb6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+.card:hover .overlay {
+  opacity: 1;
 }
+
+.about-card:hover .overlay {
+  opacity: 1;
+  background-color: #2A6355;
+}
+
+.text-overlay {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.about-card {
+  overflow: hidden;
+  background: #2A6355;
+  color: white;
+  border-radius: 2px 2px 4px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.about-text {
+  padding: 20px;
+}
+
+// .section {
+//   background: white;                         /* White background */
+//   padding: 30px;                             /* Internal space */
+//   border-radius: 4px;                        /* Small radius */
+//   box-shadow: 0 10px 30px rgba(0,0,0,.1);
+//   margin-top: 100px;
+// }
+
+

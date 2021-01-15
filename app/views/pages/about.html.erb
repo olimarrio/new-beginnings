@@ -1,101 +1,104 @@
-<!-- <div class="white-spacer"></div>
+<div class="white-spacer"></div>
   <div class="section">
     <div class="container">
       <h1>Meet our team</h1>
-      <hr class="top">
+      <div class="flourish">
+        <%= image_tag "rsz_nb_butterfly-01.png", alt: "alttext", class: "avatar-tiny", id: "img-hr" %>
+      </div>
       <div class="white-spacer"></div>
-      <div class="row justify-content-center">
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <div>
-            <%= image_tag("NB.png", class: "avatar-bordered-employee") %>
-          </div>
-          <div>
-            <h2>Angelique Bradford</h2>
-          </div>
-          <div>
-            <h3>Founder & Commercial Director</h3>
-          </div>
-          <div class="accordion">
-            <button type="button" class="orange-button">Find out more</button>
-            <div class="accordion-content">
-              <p>
-                Angelique has over 20 years of helping build businesses from within. She has excels at finding great talent, matching skills to roles, and making sure that individuals are truly following their right career path. Previous roles within both Sales and Marketing brings a wide commercial experience, also ensuring that she can help New Beginnings Consultancy clients both develop and maintain their broader business vision.
-              </p>
-              <p>
-                Her passion is for people and she loves to see “when a plan comes together” for both client and candidate. Outside of work other passions are her son, horse, dogs, a cat and the team believe she thinks she is a chicken whisperer! Her husband has realised he is now at the bottom of the pecking order…
-              </p>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <%= image_tag "ange.png", alt: "Angelique Bradford", class: "avatar-bordered-employee" %>
+              <div>
+                <h2>Angelique Bradford</h2>
+                <h3>Founder & Commercial Director</h3>
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Find out more
+                  </a>
+                <div class="white-spacer"></div>
+                <div class="collapse" id="collapseExample">
+                  <p>
+                    Angelique has over 20 years of helping build businesses from within. She has excels at finding great talent, matching skills to roles, and making sure that individuals are truly following their right career path. Previous roles within both Sales and Marketing brings a wide commercial experience, also ensuring that she can help New Beginnings Consultation's clients both develop and maintain their broader business vision.
+                  </p>
+                  <p>
+                    Her passion is for people and she loves to see “when a plan comes together” for both client and candidate. Outside of work other passions are her son, horse, dogs, a cat and the team believe she thinks she is a chicken whisperer! Her husband has realised he is now at the bottom of the pecking order…
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag "lydia.png", alt: "Lydia Stimpson", class: "avatar-bordered-employee" %>
+              <h2>Lydia Stimpson</h2>
+              <h3>Marketing Extraordinaire</h3>
+              <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Find out more
+                </a>
+              <div class="white-spacer"></div>
+              <div class="collapse" id="collapseExample">
+                <p>
+                  Lydia is a social butterfly, she loves the diversity of working with people from all over the world both staff and guests who have enhanced her perspective on life. As a child, her most formative years were spent in Ireland, which gave her the love for music, festivals, fun and travel. She has a love for the creative arts and brings to New Beginnings Consultation her innovative approach.  She supports the marketing and design of the brand.
+
+                </p>
+                <p>
+                  Not only is she the whizz on all things SEO, she is available to help our clients achieve the transformation that they seek both in their business and their lives.   Lest we forget, her other passion is her dog who takes up the rest of her time!!!
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag "marni.png", alt: "Marni Scott", class: "avatar-bordered-employee" %>
+              <h2>Marni Scott</h2>
+              <h3>The Organiser</h3>
+              <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Find out more
+                </a>
+              <div class="white-spacer"></div>
+              <div class="collapse" id="collapseExample">
+                <p>
+                 Marni is the Executive Assistant to Rose De Winter. She performs various office management duties and recruits new talent for New Beginnings. Prior to joining the company, Marni recently graduated from Bournemouth University after studying Communication and Media.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag "olic.png", alt: "Oli Cassell", class: "avatar-bordered-employee" %>
+              <h2>Oli Cassell</h2>
+              <h3>Design Wizard</h3>
+              <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Find out more
+                </a>
+              <div class="white-spacer"></div>
+              <div class="collapse" id="collapseExample">
+                <p>
+                  Oli is New Beginnings' head of design, ensuring consistency across the board with NBC’s identity. Oli is currently based in Manchester and has over 5 years experience working both in-house for global brands and with highly regarded agencies in Manchester, Mallorca and Glasgow.
+                </p>
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag "olim.jpeg", alt: "Oli Marriott", class: "avatar-bordered-employee" %>
+              <h2>Oli Marriott</h2>
+              <h3>Web Developer</h3>
+              <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Find out more
+                </a>
+              <div class="white-spacer"></div>
+              <div class="collapse" id="collapseExample">
+                <p>
+                  Oli is New Beginnings' web developer, based in Amsterdam. Oli has a background in product but has recently converted to programming and helping Ange with her technology phobia.
+                </p>
+              </div>
             </div>
           </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <div>
-          <%= image_tag "NB2.png", alt: "alttext", class: "avatar-bordered-employee" %>
-          </div>
-          <div>
-            <h2>Chris McNally</h2>
-          </div>
-          <p>
-            Chris has a twelve year commercial career operating in such FMCG businesses as Red Bull, Lactalis and Coty, in a range of commercial and management roles, partnered with several notable retailers, both in the UK and globally.
-          </p>
-          <p>
-            Whilst in his commercial roles, he completed both a Diploma in Business Management and an MBA in Leadership, Strategy and Management Consulting, only further placing Chris in a strong position to lead and direct organisations in core commercial challenges.
-          </p>
-          <p>
-           As a Principal Consultant,  he passionately believes in listening to our clients, in order to make the recommendations most relevant and beneficial to them.
-          </p>
-        </div>
-      </div>
       <div class="white-spacer"></div>
-      <div class="row justify-content-center">
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <div>
-            <%= image_tag("NB.png", class: "avatar-bordered-employee") %>
-          </div>
-          <div>
-            <h2>Angelique Bradford</h2>
-          </div>
-          <div>
-            <p>
-              Angelique has over 20 years of helping build businesses from within. She has excels at finding great talent, matching skills to roles, and making sure that individuals are truly following their right career path. Previous roles within both Sales and Marketing brings a wide commercial experience, also ensuring that she can help New Beginnings Consultancy clients both develop and maintain their broader business vision.
-            </p>
-            <p>
-              Her passion is for people and she loves to see “when a plan comes together” for both client and candidate. Outside of work other passions are her son, horse, dogs, a cat and the team believe she thinks she is a chicken whisperer! Her husband has realised he is now at the bottom of the pecking order…
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <div>
-          <%= image_tag "NB2.png", alt: "alttext", class: "avatar-bordered-employee" %>
-          </div>
-          <div>
-            <h2>Chris McNally</h2>
-          </div>
-          Chris has a twelve year commercial career operating in such FMCG businesses as Red Bull, Lactalis and Coty, in a range of commercial and management roles, partnered with several notable retailers, both in the UK and globally.
-
-
-
-          Whilst in his commercial roles, he completed both a Diploma in Business Management and an MBA in Leadership, Strategy and Management Consulting, only further placing Chris in a strong position to lead and direct organisations in core commercial challenges.
-          <p>
-           As a Principal Consultant,  he passionately believes in listening to our clients, in order to make the recommendations most relevant and beneficial to them.
-          </p>
-
-        </div>
-      </div>
     </div>
   </div>
-</div> -->
 
-<div class= "container">
-  <div class= "section contact-page">
-    <h1>New Beginnings Consultation</h1>
-    <h2>About us</h2>
-    <p>Our website is being updated! More to come soon... </p>
-    <p>In the meantime please feel free to get in touch.</p>
-    <p>Please call:</p>
-    <a class="email-link" href="tel:+442034885717">0203 488 5717</a>
-    <p>Or email:</p>
-    <div class="breaker">
-      <a href="mailto:hello@newbeginningsconsultation.com" class="email-link">hello@newbeginningsconsultation.com</a>
-    </div>
-  </div>
-</div>

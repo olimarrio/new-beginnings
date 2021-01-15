@@ -15,17 +15,11 @@
   padding: 10px 60px;
 }
 
-.orange-button-active {
-  background: bisque;
-  border-color: bisque;
-}
-
 .accordion-content {
   overflow: hidden;
   max-height: 0;
   transition: background 0.2;
   padding: 0 15px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 

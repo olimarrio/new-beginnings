@@ -1,10 +1,10 @@
 const initAccordion = () => {
-  document.querySelectorAll('.orange-button').forEach(button => {
+  document.querySelectorAll('.btn-lilac').forEach(button => {
     button.addEventListener('click', () => {
       const accordionContent = button.nextElementSibling;
 
-      button.classList.toggle('orange-button-active');
-      if (button.classList.contains('orange-button-active')) {
+      button.classList.toggle('btn-lilac-active');
+      if (button.classList.contains('btn-lilac-active')) {
         accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
       } else {
         accordionContent.style.maxHeight = 0;
