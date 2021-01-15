@@ -44,6 +44,13 @@
   text-decoration: none;
   color: #2A6355;
   overflow-wrap: break-word;
+  overflow: hiden;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-link {
+    max-width: 10%;
+  }
 }
 
 .card-links p {
@@ -137,6 +144,14 @@
 
 .about-text {
   padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-item-end {
+  justify-content: flex-end;
 }
 
 // .section {
