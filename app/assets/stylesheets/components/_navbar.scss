@@ -5,6 +5,7 @@
   background-color: white;
   transition: 0.5s background-color ease;
   position: fixed-top;
+  max-width: 100%;
 }
 
 .navbar-home {
@@ -55,3 +56,9 @@
     color: black;
   }
 }
+
+// @media screen and (max-width: 600px) {
+//   .fixed-top {
+//     right: 40px;
+//   }
+// }

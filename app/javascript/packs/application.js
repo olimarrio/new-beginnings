@@ -27,4 +27,9 @@ initAccordion();
 
 import { scroll } from '../components/scroll';
 
+import AOS from 'aos';
+AOS.init({
+  disable: 'mobile'
+});
+
 
