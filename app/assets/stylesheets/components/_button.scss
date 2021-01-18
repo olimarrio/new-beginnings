@@ -44,3 +44,16 @@
 .btn-lilac:active {
   opacity: 0.8;
 }
+
+.btn-lilac-contact {
+  color: white;
+  background-color: #6C4477;
+  border: 1px solid #6C4477;
+  padding: 8px 48px;
+  border-radius: 4px;
+  font-weight: lighter;
+  transition: opacity 0.3s ease;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  min-height: 50px;
+}

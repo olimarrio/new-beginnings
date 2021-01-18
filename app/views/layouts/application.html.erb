@@ -27,6 +27,8 @@
     <noscript><img alt="" src="https://secure.harm6stop.com/196620.png" style="display:none;" /></noscript>
     <%= render "shared/navbar" %>
     <%= yield %>
+    <!-- <p class="notice"><%= notice %></p> -->
+    <p class="alert"><%= alert %></p>
     <%= render "shared/contact_form" if !current_page?(pages_contact_path) && !current_page?(pages_about_path) %>
     <%= render "shared/footer" %>
 

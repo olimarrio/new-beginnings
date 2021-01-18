@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("button").on("click", function(event) {
+  $(".btn-lilac").on("click", function(event) {
     var hash = $(this).attr("data-target"),
       target = $("#" + hash);
 
