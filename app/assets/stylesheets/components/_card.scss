@@ -116,9 +116,11 @@
   opacity: 1;
 }
 
+@media (hover: hover) and (pointer: fine) {
 .about-card:hover .overlay {
   opacity: 1;
   background-color: #2A6355;
+}
 }
 
 .text-overlay {
