@@ -29,7 +29,7 @@
     <%= yield %>
     <!-- <p class="notice"><%= notice %></p> -->
     <p class="alert"><%= alert %></p>
-    <%= render "shared/contact_form" if !current_page?(pages_contact_path) && !current_page?(pages_about_path) %>
+    <%= render "shared/contact_form" if current_page?(root_path) || current_page?(pages_human_hr_path) && current_page?(pages_recruitment_path) || current_page?(pages_sales_path) || current_page?(pages_risk_path) || current_page?(posts_path) %>
     <%= render "shared/footer" %>
 
     <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %> <!-- from app/assets/javascripts/application.js -->
