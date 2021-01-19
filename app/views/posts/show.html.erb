@@ -5,7 +5,10 @@
     <div class="flourish">
       <%= image_tag "rsz_nb_butterfly-01.png", alt: "alttext", class: "avatar-tiny", id: "img-hr" %>
     </div>
-      <%= cl_image_tag @post.banner_photo.key  %>
+    <div>
+      <%= cl_image_tag @post.banner_photo.key, height: 500, width: 800, class: "responsive-image" %>
+
+    </div>
   </div>
 </div>
 <div class="section-teal">
@@ -14,7 +17,6 @@
       <%= image_tag "rsz_nb_butterfly-01.png", alt: "alttext", class: "avatar-tiny", id: "img-hr" %>
     </div>
       <p><%= simple_format @post.body %></p>
-      <%= link_to 'Back', posts_path %>
       <% if current_user && current_user.admin %>
         <%= link_to 'Edit', edit_post_path(@post) %>
         <%= link_to 'Delete' , post_path(@post), method: :delete,

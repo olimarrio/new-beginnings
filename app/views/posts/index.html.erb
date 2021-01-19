@@ -5,17 +5,21 @@
   <div class="flourish">
       <%= image_tag "rsz_nb_butterfly-01.png", alt: "alttext", class: "avatar-tiny", id: "img-hr" %>
   </div>
-  <ul>
+  <div class="white-spacer"></div>
     <% @posts.each do |post| %>
-        <div class="card-blog" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path post.banner_photo.key %>')">
-          <li>
-            <h3><%= link_to post.title, post_path(post) %></h3>
-          </li>
+        <div class="row justify-content-center">
+          <div class="container col-md-12 col-lg-6">
+            <%= link_to post_path(post) do  %>
+              <%= cl_image_tag post.banner_photo.key, height: 500, width: 800,  class: "responsive-image"%>
+              <h3><%= link_to post.title, post_path(post), class: "email-phone-blue" %></h3>
+              <p>On <%= post.created_at.strftime("%B %d %Y") %></p>
+            <% end %>
+          </div>
         </div>
-    <% end %>
+      <div class="white-spacer"></div>
+      <% end %>
     <% if current_user && current_user.admin? %>
     <%= link_to 'Write a new article', new_post_path %>
     <% end %>
-  </ul>
 </div>
 
