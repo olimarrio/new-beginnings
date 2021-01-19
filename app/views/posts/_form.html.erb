@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Write a new article</h1>
+  <div class="white-spacer"></div>
+  <%=simple_form_for(@post) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :body %>
+    <%= f.input :banner_photo, as: :file %>
+    <%= f.submit %>
+  <% end %>
+</div>

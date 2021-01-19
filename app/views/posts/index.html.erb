@@ -1,0 +1,19 @@
+<div class="white-spacer"></div>
+<div class="white-spacer"></div>
+<div class="section">
+  <h1>Our Blog</h1>
+  <div class="flourish">
+      <%= image_tag "rsz_nb_butterfly-01.png", alt: "alttext", class: "avatar-tiny", id: "img-hr" %>
+  </div>
+  <ul>
+    <% @posts.each do |post| %>
+        <div class="card-blog" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path post.banner_photo.key %>')">
+          <li>
+            <h3><%= link_to post.title, post_path(post) %></h3>
+          </li>
+        </div>
+    <% end %>
+    <%= link_to 'Write a new article', new_post_path %>
+  </ul>
+</div>
+

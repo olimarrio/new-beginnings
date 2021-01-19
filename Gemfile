@@ -4,6 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.4.4'
 gem 'autoprefixer-rails'
 gem 'devise'
+gem 'cloudinary', '~> 1.16.0'
+gem 'cookies_eu'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
 gem 'mail_form'

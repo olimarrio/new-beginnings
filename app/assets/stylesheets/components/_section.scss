@@ -8,6 +8,15 @@
   color: #2A6355;
 }
 
+.section-white {
+  background: white;
+  margin: 0px 0px;
+  padding: 30px;                             /* Internal space */
+  border-radius: 4px;                        /* Small radius */
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  color: #2A6355;
+}
+
 .white-spacer {
   margin-top: 60px;
   background-color: white;
@@ -19,14 +28,13 @@
   background-color: #DEF7F3;
 }
 
-.section-gray {
-  background-color: rgba(244, 244, 244, 0);
-  padding-top: 32px;
-}
-
 .section-teal {
   background-color: #DEF7F3;
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  color: #2A6355;
+  margin: 0px 0px;
+  padding: 30px;                             /* Internal space */
+  border-radius: 4px;
 }
 
 .section-dark {
