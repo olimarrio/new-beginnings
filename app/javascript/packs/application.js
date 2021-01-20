@@ -22,8 +22,8 @@ initUpdateNavbarOnScroll();
 console.log('Hello World from Webpacker')
 
 //Accordion
-import { initAccordion } from '../components/accordion';
-initAccordion();
+// import { initAccordion } from '../components/accordion';
+// initAccordion();
 
 import { scroll } from '../components/scroll';
 
