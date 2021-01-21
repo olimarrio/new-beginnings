@@ -1,12 +1,14 @@
 <div class="section">
-<div class="big-white-spacer"></div>
+<div class="white-spacer"></div>
 <div class="container">
   <h1>Write a new article</h1>
   <div class="white-spacer"></div>
   <%=simple_form_for(@post) do |f| %>
     <%= f.input :title %>
     <%= f.input :body %>
+    <%= f.input :body_part_two %>
     <%= f.input :banner_photo, as: :file %>
+    <%= f.input :photos, as: :file, input_html: { multiple: true } %>
     <%= f.submit %>
   <% end %>
 </div>

@@ -1,0 +1,11 @@
+2021-01-20 18:26:41.585 CET [71381] LOG:  starting PostgreSQL 13.1 on x86_64-apple-darwin20.1.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.27), 64-bit
+2021-01-20 18:26:41.587 CET [71381] LOG:  listening on IPv6 address "::1", port 5432
+2021-01-20 18:26:41.587 CET [71381] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-01-20 18:26:41.588 CET [71381] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-01-20 18:26:41.594 CET [71382] LOG:  database system was shut down at 2021-01-20 18:26:30 CET
+2021-01-20 18:26:41.602 CET [71381] LOG:  database system is ready to accept connections
+2021-01-20 18:26:54.084 CET [71419] FATAL:  database "new-beginnings_development" does not exist
+2021-01-20 18:27:11.338 CET [71447] FATAL:  database "new-beginnings_development" does not exist
+2021-01-20 18:27:27.692 CET [71469] FATAL:  database "new-beginnings_development" does not exist
+2021-01-20 18:27:29.021 CET [71470] FATAL:  database "new-beginnings_development" does not exist
+2021-01-20 18:28:52.968 CET [71481] FATAL:  database "new-beginnings_development" does not exist

@@ -17,10 +17,21 @@
       <%= image_tag "rsz_nb_butterfly-01.png", alt: "alttext", class: "avatar-tiny", id: "img-hr" %>
     </div>
       <p><%= simple_format @post.body %></p>
+      <div class="d-flex justify-content-around">
+        <% @post.photos.each do |photo| %>
+          <%= cl_image_tag photo.key, class: "card card-right", id: "small-leaf" %>
+        <% end %>
+      </div>
       <% if current_user && current_user.admin %>
         <%= link_to 'Edit', edit_post_path(@post) %>
         <%= link_to 'Delete' , post_path(@post), method: :delete,
                     data: { confirm: "Are you sure?" } %>
       <% end %>
+      <div class="justify-content-center">
+        <%= link_to 'Back to blog', posts_path, class: "btn-lilac" %>
+      </div>
+  </div>
+  <div class="flourish">
+      <%= image_tag "rsz_nb_butterfly-01.png", alt: "alttext", class: "avatar-tiny", id: "img-hr" %>
   </div>
 </div>

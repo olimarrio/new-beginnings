@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.4'
+
+gem 'image_processing'
 gem 'autoprefixer-rails'
 gem 'devise'
 gem 'cloudinary', '~> 1.16.0'

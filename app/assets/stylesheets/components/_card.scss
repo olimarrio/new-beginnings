@@ -35,7 +35,7 @@
 }
 
 .card > img {
-  height: 200px;
+  height: 300px;
   width: 100%;
   object-fit: cover;
 }
@@ -63,7 +63,7 @@
 }
 
 .card h2 {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
   margin: 0;
 }
@@ -71,6 +71,7 @@
 .card p {
   opacity: .7;
   margin: 0;
+  font-size: 16px;
 }
 
 #small-leaf {
@@ -130,7 +131,7 @@
 .text-overlay {
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-  font-size: 15.5px;
+  font-size: 17px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -174,6 +175,13 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+#header-image {
+  height: 300px;
+  .card {
+    height: 400px;
+  }
 }
 
 // .section {
