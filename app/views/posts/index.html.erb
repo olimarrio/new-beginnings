@@ -2,14 +2,14 @@
 <div class="white-spacer"></div>
 <div class="section">
   <h1>Our Blog</h1>
-  <div class="flourish">
-      <%= image_tag "rsz_nb_butterfly-01.png", alt: "alttext", class: "avatar-tiny", id: "img-hr" %>
-  </div>
+  <%= render "shared/butterfly_break" %>
   <div class="white-spacer"></div>
-    <% @posts.each do |post| %>
-  <div class="blank-div">
-        <div class="row justify-content-center">
-          <div class="container col-md-12 col-lg-6">
+  <div class="posts">
+  <% @posts.each_slice(3) do |posts| %>
+    <div class="row">
+      <% posts.each do |post| %>
+        <div class="col-md-4">
+          <div class="post-card">
             <%= link_to post_path(post) do  %>
               <%= cl_image_tag post.banner_photo.key, height: 500, width: 800,  class: "responsive-image"%>
               <h3><%= link_to post.title, post_path(post), class: "email-phone-blue" %></h3>
@@ -17,14 +17,12 @@
             <% end %>
           </div>
         </div>
-      <div class="white-spacer"></div>
-      <div class="flourish">
-          <%= image_tag "rsz_nb_butterfly-01.png", alt: "alttext", class: "avatar-tiny", id: "img-hr" %>
-      </div>
       <% end %>
-    <% if current_user && current_user.admin? %>
+    </div>
+  <% end %>
+  <% if current_user && current_user.admin? %>
     <%= link_to 'Write a new article', new_post_path %>
-    <% end %>
+  <% end %>
   </div>
 </div>
 

@@ -1,116 +1,99 @@
 <div class="white-spacer"></div>
-  <div class="section">
-    <div class="container">
-      <h1>Meet our team</h1>
-      <div class="flourish">
-        <%= image_tag "rsz_nb_butterfly-01.png", alt: "alttext", class: "avatar-tiny", id: "img-hr" %>
-      </div>
-      <div class="white-spacer"></div>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
-          <div class="carousel-inner" style="margin:0px auto">
-            <div class="carousel-item active">
-              <%= image_tag "ange.png", alt: "Angelique Bradford", class: "avatar-bordered-employee" %>
+<div class="section">
+  <div class="container">
+    <h1>Meet our team</h1>
+    <%= render "shared/butterfly_break" %>
+    <div class="white-spacer"></div>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner" style="margin:0px auto">
+          <div class="carousel-item active">
+            <%= image_tag "ange.png", alt: "Angelique Bradford", class: "avatar-bordered-employee" %>
+            <div>
+              <h2>Angelique Bradford</h2>
+              <h3>Founder & Be Yourself Advocate</h3>
+              <div class="white-spacer"></div>
               <div>
-                <h2>Angelique Bradford</h2>
-                <h3>Founder & Commercial Director</h3>
-                <div class="white-spacer"></div>
-                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Find out more
-                  </a>
-                <div class="white-spacer"></div>
-                <div class="collapse" id="collapseExample">
-                  <p>
-                    Angelique has over 20 years’ experience at helping build businesses from within. She excels at finding outstanding talent, matching skills and personality to roles, and making sure that individuals are truly following the career path right for them. Previous positions within both sales and marketing bring a wide commercial breadth, ensuring that she can help New Beginnings’ clients both develop and maintain their broader business vision.
-                  </p>
-                  <p>
-                    Her passion is for people and she loves it “when a plan comes together” for both client and candidate. Outside of work, her life revolves around her son, horse, dogs, a cat and the team think she might be a chicken whisperer! Her husband has long realised he is at the bottom of the pecking order…
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag "lydia.png", alt: "Lydia Stimpson", class: "avatar-bordered-employee" %>
-              <h2>Lydia Stimpson</h2>
-              <h3>Marketing Extraordinaire</h3>
-              <div class="white-spacer"></div>
-              <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Find out more
-                </a>
-              <div class="white-spacer"></div>
-              <div class="collapse" id="collapseExample">
                 <p>
-                  A social butterfly, Lydia loves the diversity of working with people from all over the world, both colleagues and guests who have enhanced her perspective on life. As a child, her formative years were spent in Ireland, from where she gained her love of music, festivals, fun and travel. She has a passion for the creative arts and brings to New Beginnings her innovative approach. She supports the marketing and design aspects of the brand.
-
+                Angelique has over 20 years’ experience at helping build businesses from within. She excels at finding outstanding talent, matching skills and personality to roles, and making sure that individuals are truly following the career path right for them. Previous positions within both sales and marketing bring a wide commercial breadth, ensuring that she can help New Beginnings’ clients both develop and maintain their broader business vision.
                 </p>
                 <p>
-                  Not only a whizz with all things SEO, Lydia also helps support our clients to achieve the transformation they seek both in their business and their careers. Lest we forget, her other passion is her dog who takes up the rest of her time!
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag "marni.png", alt: "Marni Scott", class: "avatar-bordered-employee" %>
-              <h2>Marni Scott</h2>
-              <h3>The Organiser</h3>
-              <div class="white-spacer"></div>
-              <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Find out more
-                </a>
-              <div class="white-spacer"></div>
-              <div class="collapse" id="collapseExample">
-                <p>
-                 Marni is Executive Assistant to Rose de Winter. As well as running the office like a well-oiled machine, she also supports recruiting new talent for New Beginnings. Marni joined us having recently graduated from Bournemouth University after studying Communications and Media.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag "olic.png", alt: "Oli Cassell", class: "avatar-bordered-employee" %>
-              <h2>Oli Cassell</h2>
-              <h3>Design Guru</h3>
-              <div class="white-spacer"></div>
-              <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Find out more
-                </a>
-              <div class="white-spacer"></div>
-              <div class="collapse" id="collapseExample">
-                <p>
-                  Oli is our Head of Design. He is the creative brain behind all our visuals and New Beginnings’ brand identity. Currently based in Manchester, Oli has over 5 years’ experience working both in-house for global brands, and also with highly regarded agencies in Manchester, Mallorca and Glasgow.
-                </p>
-
-              </div>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag "olim.png", alt: "Oli Marriott", class: "avatar-bordered-employee" %>
-              <h2>Oli Marriott</h2>
-              <h3>Web Wizard</h3>
-              <div class="white-spacer"></div>
-              <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Find out more
-                </a>
-              <div class="white-spacer"></div>
-              <div class="collapse" id="collapseExample">
-                <p>
-                  Based in Amsterdam, Oli is New Beginnings’ web developer and somehow enables all our ideas for the website to come to fruition. With a background in product, Oli has since moved into programming and development. He is also head of helping Ange with her technology phobia.
+                  Her passion is for people and she loves it “when a plan comes together” for both client and candidate. Outside of work, her life revolves around her son, horse, dogs, a cat and the team think she might be a chicken whisperer! Her husband has long realised he is at the bottom of the pecking order…
                 </p>
               </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <div class="carousel-item">
+            <%= image_tag "rose.jpg", alt: "Rose De Winter", class: "avatar-bordered-employee" %>
+            <h2>Rose De Winter</h2>
+            <h3>Principal Consultant</h3>
+            <div class="white-spacer"></div>
+            <div>
+              <p>
+                Rose started her career in financial journalism before moving into corporate public relations. Rose then re trained in psychoanalysis and now works consults with businesses and individuals on performance and skills enhancement and diversification. Rose enjoys country pursuits and is often to be found with her horses and dogs.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag "lydia.png", alt: "Lydia Stimpson", class: "avatar-bordered-employee" %>
+            <h2>Lydia Stimpson</h2>
+            <h3>Marketing Extraordinaire</h3>
+            <div class="white-spacer"></div>
+            <div>
+              <p>
+                A social butterfly, Lydia loves the diversity of working with people from all over the world, both colleagues and guests who have enhanced her perspective on life. As a child, her formative years were spent in Ireland, from where she gained her love of music, festivals, fun and travel. She has a passion for the creative arts and brings to New Beginnings her innovative approach. She supports the marketing and design aspects of the brand.
+              </p>
+              <p>
+                Not only a whizz with all things SEO, Lydia also helps support our clients to achieve the transformation they seek both in their business and their careers. Lest we forget, her other passion is her dog who takes up the rest of her time!
+              </p>
+            </div>
+          </div>
+           <div class="carousel-item">
+             <%= image_tag "marni.png", alt: "Marni Scott", class: "avatar-bordered-employee" %>
+             <h2>Marni Scott</h2>
+             <h3>The Organiser</h3>
+             <div class="white-spacer"></div>
+             <div>
+                <p>
+                  Marni is Executive Assistant to Rose de Winter. As well as running the office like a well-oiled machine, she also supports recruiting new talent for New Beginnings. Marni joined us having recently graduated from Bournemouth University after studying Communications and Media.
+                </p>
+              </div>
+            </div>
+          <div class="carousel-item">
+             <%= image_tag "olic.png", alt: "Oli Cassell", class: "avatar-bordered-employee" %>
+             <h2>Oli Cassell</h2>
+            <h3>Design Guru</h3>
+            <div class="white-spacer"></div>
+            <div>
+              <p>
+                Oli is our Head of Design. He is the creative brain behind all our visuals and New Beginnings’ brand identity. Currently based in Manchester, Oli has over 5 years’ experience working both in-house for global brands, and also with highly regarded agencies in Manchester, Mallorca and Glasgow.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag "olim.png", alt: "Oli Marriott", class: "avatar-bordered-employee" %>
+            <h2>Oli Marriott</h2>
+            <h3>Web Wizard</h3>
+            <div class="white-spacer"></div>
+            <div>
+              <p>
+                Based in Amsterdam, Oli is New Beginnings’ web developer and somehow enables all our ideas for the website to come to fruition. With a background in product, Oli has since moved into programming and development. He is also head of helping Ange with her technology phobia.
+              </p>
+            </div>
+          </div>
         </div>
-      <div class="white-spacer"></div>
-
-      <div class="flourish">
-        <%= image_tag "rsz_nb_butterfly-01.png", alt: "alttext", class: "avatar-tiny", id: "img-hr" %>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
       <div class="white-spacer"></div>
+      <%= render "shared/butterfly_break" %>
+      <div class="white-spacer"></div>
       <h3>Get in touch below:</h3>
-
-    </div>
   </div>
+</div>
 

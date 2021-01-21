@@ -19,6 +19,7 @@
           We help our clients achieve outstanding commercial excellence by putting people and personality at the heart of every decision.
           We aim to empower organisations to be brave, to take real action and implement transformative change.
           We celebrate diverse personalities and believe they can change the narrative in business for the better.
+          Variety is the spice of life, and also business!
         </p>
         <h3>
           Together, we can break the mould.
@@ -36,17 +37,13 @@
 </div>
 
 <div class="section" id="what-we-do">
-  <div class="flourish">
-    <%= image_tag "rsz_nb_butterfly-01.png", alt: "alttext", class: "avatar-tiny", id: "img-hr" %>
-  </div>
+  <%= render "shared/butterfly_break" %>
   <div class="white-spacer"></div>
   <h3 class="text-center">
     What we do
   </h3>
-
   <div class="container">
     <div class="white-spacer"></div>
-
     <div class="row justify-content-center">
       <div class="col-sm-12 col-md-6" data-aos="fade-down-right" data-aos-duration="3000" id="medium-leaf" >
         <%= link_to pages_sales_path, class: "card card-right" do %>
@@ -65,7 +62,7 @@
                 Our approach to capability development spans a wide range of industries.
                 We help individuals and teams to be the best they can be.
               </p>
-              <p class="btn-lilac-tiny"><strong>See more</strong></p>
+              <button class ="btn-lilac-tiny">See more</button>
             </div>
           </div>
         <% end %>
@@ -86,7 +83,7 @@
               <p>
                 To plan effectively, risk needs to be tangible. Our focus is just that - what might happen to your market, your sales, your people? We help organisations plan for and mitigate against, the risks in a changing world.
               </p>
-              <p class="btn-lilac-tiny"><strong>See more</strong></p>
+              <button class ="btn-lilac-tiny">See more</button>
             </div>
           </div>
         <% end %>
@@ -108,7 +105,7 @@
                 We believe in putting people first in every context.
                 Our focus on people and personalities helps organisations be successful and a great place to work, even in challenging times.
               </p>
-              <p class="btn-lilac-tiny"><strong>See more</strong></p>
+              <button class ="btn-lilac-tiny">See more</button>
             </div>
           </div>
         <% end %>
@@ -129,26 +126,27 @@
                 <p>
                   Recruitment isn’t just about jobs. Recruitment is about personalities. Of employers and of candidates. Our approach finds people that fit. People that love their new job. Companies that love their new people.
                 </p>
-                <p class="btn-lilac-tiny"><strong>See more</strong></p>
+                <button class ="btn-lilac-tiny">See more</button>
               </div>
             </div>
         <% end %>
       </div>
     </div>
   </div>
-    <div class="container">
-      <p>We would love to hear from you!</p>
-      <div class="row justify-content-around">
-        <div class="col-sm-12 col-md-4 border-blue">
-          <p>Call us on:</p>
-          <a class="email-phone-blue" href="tel:+442034885717">0044 203 488 5717</a>
+  <%= render "shared/butterfly_break" %>
+  <div class="container">
+    <p>We would love to hear from you!</p>
+    <div class="row justify-content-around">
+      <div class="col-sm-12 col-md-4 border-blue">
+        <p>Call us on:</p>
+        <a class="email-phone-blue" href="tel:+442034885717">0044 203 488 5717</a>
+      </div>
+      <div class="white-spacer"></div>
+      <div class="col-sm-12 col-md-4 border-blue">
+        <p>Email us at:</p>
+        <div class="breaker">
+          <a href="mailto:hello@newbeginningsconsultation.com" class="email-phone-blue">hello<WBR>@newbeginnings<WBR>consultation.com</a>
         </div>
-        <div class="white-spacer"></div>
-        <div class="col-sm-12 col-md-4 border-blue">
-          <p>Email us at:</p>
-          <div class="breaker">
-            <a href="mailto:hello@newbeginningsconsultation.com" class="email-phone-blue">hello<WBR>@newbeginnings<WBR>consultation.com</a>
-          </div>
         </div>
       </div>
       <p>Or get in touch using the form below:</p>
