@@ -7,6 +7,7 @@
   </div>
   <div class="white-spacer"></div>
     <% @posts.each do |post| %>
+  <div class="blank-div">
         <div class="row justify-content-center">
           <div class="container col-md-12 col-lg-6">
             <%= link_to post_path(post) do  %>
@@ -17,10 +18,13 @@
           </div>
         </div>
       <div class="white-spacer"></div>
+      <div class="flourish">
+          <%= image_tag "rsz_nb_butterfly-01.png", alt: "alttext", class: "avatar-tiny", id: "img-hr" %>
+      </div>
       <% end %>
     <% if current_user && current_user.admin? %>
     <%= link_to 'Write a new article', new_post_path %>
     <% end %>
-
+  </div>
 </div>
 

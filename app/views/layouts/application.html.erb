@@ -25,11 +25,18 @@
   <body>
     <script type="text/javascript" src="https://secure.harm6stop.com/js/196620.js" ></script>
     <noscript><img alt="" src="https://secure.harm6stop.com/196620.png" style="display:none;" /></noscript>
-    <%= render "shared/navbar" %>
-    <%= yield %>
-    <!-- <p class="notice"><%= notice %></p> -->
-    <p class="alert"><%= alert %></p>
-    <%= render "shared/contact_form" if current_page?(root_path) || current_page?(pages_human_hr_path) && current_page?(pages_recruitment_path) || current_page?(pages_sales_path) || current_page?(pages_risk_path) || current_page?(posts_path) || current_page?(pages_about_path) %>
+
+    <div class="section">
+      <div class="container justify-content-center">
+        <%= image_tag "New_site-06", alt: "New website image holder", class: "responsive-image" %>
+      </div>
+       <div class="flourish">
+        <%= image_tag "rsz_nb_butterfly-01.png", alt: "alttext", class: "avatar-tiny", id: "img-hr" %>
+      </div>
+      <h1>In the meantime...contact us below</h1>
+      <%= render "shared/contact_form" %>
+    </div>
+
     <%= render "shared/footer" %>
 
 
