@@ -1,7 +1,7 @@
 <div class="white-spacer"></div>
 <div class="white-spacer"></div>
 <div class="section">
-  <h1>Our Blog</h1>
+  <h1>Our Thoughts</h1>
   <%= render "shared/butterfly_break" %>
   <div class="white-spacer"></div>
   <div class="posts">
@@ -20,6 +20,9 @@
       <% end %>
     </div>
   <% end %>
+  <p>Has anything you've read piqued your interest? Care to discuss it with us more?</p>
+  <p>We love a chat so get in touch using the form below.</p>
+  <%= render "shared/butterfly_break" %>
   <% if current_user && current_user.admin? %>
     <%= link_to 'Write a new article', new_post_path %>
   <% end %>

@@ -20,11 +20,16 @@
         <%= link_to "Blog", posts_path, class: "nav-link-black" %>
       </li>
       <li>
-        <%= link_to "Candidates", pages_contact_path, class: "nav-link-black" %>
+        <%= link_to "Candidates",  pages_candidate_path, class: "nav-link-black" %>
       </li>
       <li>
         <%= link_to "Contact", pages_contact_path, class: "nav-link-black" %>
       </li>
+      <% if current_user && current_user.admin? %>
+      <li>
+        <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "nav-link-black" %>
+      </li>
+      <% end %>
     </ul>
   </div>
 </div>

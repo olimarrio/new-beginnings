@@ -7,8 +7,8 @@ $headers-font: "ZapfHumnstBTWXX-Roman";
 
 // To use a font file (.woff) uncomment following lines
 @font-face {
-  font-family: 'ZapfHumnstBTWXX-Roman';
-  src: url('webFonts/ZapfHumnstBTWXX-Roman/font.woff2') format('woff2'), url('webFonts/ZapfHumnstBTWXX-Roman/font.woff') format('woff');
+  font-family: "ZapfHumnstBTWXX-Roman";
+  src: url('./webFonts/ZapfHumnstBTWXX-Roman/font.woff2') format('woff2'), url('webFonts/ZapfHumnstBTWXX-Roman/font.woff') format('woff');
 }
 
 // @font-face {

@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get 'pages/sales'
   get 'pages/human_hr'
   get 'pages/risk'
+  get 'pages/candidate'
+  get 'pages/thanks'
   resources :contacts, only: [:new, :create]
   resources :posts
   get '*path' => redirect("/")

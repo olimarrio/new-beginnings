@@ -33,6 +33,12 @@
   font-family: helvetica;
 }
 
+.btn-lilac:hover {
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+}
+
 .btn-lilac-small {
   color: white;
   background-color: #6C4477;
@@ -72,5 +78,32 @@
   margin-top: 30px;
   min-height: 50px;
   font-family: helvetica;
+  cursor: pointer;
+}
+
+.inputfile + label {
+  color: white;
+  background-color: #6C4477;
+  border: 1px solid #6C4477;
+  padding: 8px 48px;
+  border-radius: 4px;
+  font-weight: lighter;
+  transition: opacity 0.3s ease;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  min-height: 50px;
+  font-family: helvetica;
+  cursor: pointer;
+}
+
+.inputfile + label:hover {
+  opacity: 0.8;
+}
+
+.btn-lilac-contact:hover {
+  opacity: 0.8;
+  color: white;
+  border-color: #3BD4CD;
+  text-decoration: none;
 }
 

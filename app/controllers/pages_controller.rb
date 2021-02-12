@@ -19,4 +19,10 @@ class PagesController < ApplicationController
 
   def human_hr
   end
+
+  def candidate
+  end
+
+  def thanks
+  end
 end

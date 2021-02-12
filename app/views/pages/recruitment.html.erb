@@ -71,7 +71,7 @@
     <div class="row justify-content-center align-items-center">
       <div class="col-sm-12 col-md-4">
         <div class="card card-right" data-aos="fade-down-right" data-aos-duration="3000" id="small-leaf">
-          <img src="https://images.unsplash.com/photo-1535615615570-3b839f4359be?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" alt="Heart in the sand">
+          <%= image_tag "recruitment.jpg", alt: "Morther working from home with baby" %>
         </div>
       </div>
       <div class="col-sm-12 col-md-4">
@@ -130,6 +130,9 @@
           <img src="https://images.unsplash.com/photo-1497561813398-8fcc7a37b567?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="Man proud of achievment in red sky">
         </div>
       </div>
+    </div>
+    <div>
+      <%= link_to "Register your CV", pages_candidate_path, class: "btn btn-lilac-contact" %>
     </div>
   </div>
   <%= render "shared/butterfly_break" %>

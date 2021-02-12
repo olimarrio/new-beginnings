@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_action :find_post, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:show, :index]
-  before_action :is_admin!, except: [:show, :index]
+  # before_action :is_admin!, except: [:show, :index]
 
   def index
     @posts = Post.all
@@ -37,7 +37,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :body, :body_part_two, :banner_photo, photos: [])
+    params.require(:post).permit(:title, :body, :body_part_two, :banner_photo, :left_photo, :right_photo)
   end
 
   def find_post

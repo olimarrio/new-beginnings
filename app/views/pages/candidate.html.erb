@@ -1,0 +1,23 @@
+<div class="white-spacer"></div>
+<div class="section">
+  <div class="container text-center">
+    <h1>Candidates</h1>
+    <%= render "shared/butterfly_break" %>
+  </div>
+  <div class="white-spacer"></div>
+  <div class="container">
+    <div class="d-flex justify-content-around">
+      <div class="card card-right" data-aos="fade-down-right" data-aos-duration="3000" id="small-leaf">
+        <%= image_tag "typewriter.jpg", alt: "alttext" %>
+      </div>
+      <div class=" card card-left" id="small-leaf" data-aos="fade-down-left" data-aos-duration="3000" id="medium-leaf">
+        <%= image_tag "hellosign.jpg", alt: "alttext" %>
+      </div>
+    </div>
+    <p>If you are looking for your new beginning, we’d love to hear from you.</p>
+    <p>Please complete the form and one of our consultants will be in touch with you soon.</p>
+  </div>
+  <div class="white-spacer"></div>
+  <%= render "shared/butterfly_break" %>
+</div>
+<%= render 'shared/candidate_form' %>
