@@ -5,10 +5,10 @@
   <%= render "shared/butterfly_break" %>
   <div class="white-spacer"></div>
   <div class="posts">
-    <% @posts.each_slice(3) do |posts| %>
+    <% @posts.reverse.each_slice(3) do |posts| %>
       <div class="row justify-content-center">
         <% posts.each do |post| %>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="post-card">
             <%= link_to post_path(post) do  %>
               <%= cl_image_tag post.banner_photo.key, height: 500, width: 800,  class: "responsive-image"%>
