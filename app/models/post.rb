@@ -6,4 +6,5 @@ class Post < ApplicationRecord
   has_one_attached :right_photo
   extend FriendlyId
   friendly_id :title, use: :slugged
+  default_scope {order(created_at: :desc)}
 end
