@@ -11,7 +11,7 @@
         <div class="col-md-4">
           <div class="post-card">
             <%= link_to post_path(post) do  %>
-              <%= cl_image_tag post.banner_photo.key, height: 500, width: 800%>
+              <%= cl_image_tag post.banner_photo.key, height: 500, width: 800,  class: "responsive-image"%>
               <h3><%= link_to post.title, post_path(post), class: "email-phone-blue" %></h3>
               <p><%= post.created_at.strftime("%d %B %Y") %></p>
             <% end %>
