@@ -11,7 +11,7 @@ class PagesController < ApplicationController
   def recruitment
   end
 
-  def risk
+  def coaching
   end
 
   def sales

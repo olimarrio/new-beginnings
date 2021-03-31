@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'pages/recruitment'
   get 'pages/sales'
   get 'pages/human_hr'
-  get 'pages/risk'
+  get 'pages/coaching'
   get 'pages/candidate'
   get 'pages/thanks'
   resources :contacts, only: [:new, :create]
