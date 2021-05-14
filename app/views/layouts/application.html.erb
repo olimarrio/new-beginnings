@@ -22,8 +22,8 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<!--     <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css"> -->
-
+<!--     <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
+ -->
 
     <title>New Beginnings Consultation | Listen. Empower. Transform.</title>
     <meta name="description" content="Unique times require unique perspectives and solutions. Start your new beginning today. With years of experience in all aspects of business, we are here to help. Focusing on commercial excellence, recruitment, risk management and human resources, we can help you get your business to where it needs to be. ">
@@ -38,7 +38,7 @@
     <%= yield %>
     <!-- <p class="notice"><%= notice %></p> -->
     <p class="alert"><%= alert %></p>
-    <%= render "shared/contact_form" if current_page?(root_path) || current_page?(pages_human_hr_path) || current_page?(pages_recruitment_path) || current_page?(pages_sales_path) || current_page?(pages_coaching_path) || current_page?(posts_path) || current_page?(pages_about_path) %>
+    <%= render "shared/contact_form" if current_page?(root_path) || current_page?(pages_human_hr_path) || current_page?(pages_recruitment_path) || current_page?(pages_sales_path) || current_page?(pages_coaching_path) || current_page?(posts_path) || current_page?(pages_testimonials_path) %>
     <%= render "shared/footer" %>
 
 

@@ -2,19 +2,16 @@
 // @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
 // @import url('https://fonts.googleapis.com/css?family=Comfortaa|Signika&display=swap');
 // Define fonts for body and headers
+@import url('//hello.myfonts.net/count/3db118');
+
 $body-font: helvetica;
 $headers-font: "ZapfHumnstBTWXX-Roman";
+
 
 // To use a font file (.woff) uncomment following lines
 @font-face {
   font-family: "ZapfHumnstBTWXX-Roman";
-  src: url('./webFonts/ZapfHumnstBTWXX-Roman/font.woff2') format('woff2'), url('webFonts/ZapfHumnstBTWXX-Roman/font.woff') format('woff');
+  src: url('../../fonts/font.woff2') format('woff2'), url('../../fonts/font.woff') format('woff');
 }
 
-// @font-face {
-//   font-family: "MyWebFont";
-//   src:  url('font.woff2') format('woff2'),
-//         url('font.woff') format('woff');
 
-// }
-$my-font: "ZapfHumnstBTWXX-Roman";
